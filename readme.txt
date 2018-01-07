@@ -1,4 +1,4 @@
-Coding exercise for Zephyr Health
+Coding exercise for large XML streaming
 Author: Siengxay Nhien siengxay@gmail.com
 
 * INSTRUCTIONS TO BUILD AND RUN
@@ -7,11 +7,11 @@ Prerequisites:
 -Oracle JDK1.8+
 -Apache Maven 3.3.9
 
--Copy and unzip this file into your local machine into folder "zephyr-hcp-pub"
--go to that directory: cd ~/zephyr-hcp-pub
+-Copy and unzip this file into your local machine into folder "zephyr"
+-go to that directory: cd ~/zephyr
 -to compile: mvn install
 This will build a fat jar will dependencies under "target/zephyr-tophcp-jar-with-dependencies.jar"
--download the full XML file to your local folder, say into "zephyr-hcp-pub/data/pubmed_result.xml"
+-download the full XML file to your local folder, say into "zephyr/data/pubmed_result.xml"
 You will need to pass the path to that file as an argument when running the program
 -to run: java -jar target/zephyr-tophcp-jar-with-dependencies.jar "data\pubmed_result.xml"
 This should output the list of Top Health Care Providers, along with the number of publications
